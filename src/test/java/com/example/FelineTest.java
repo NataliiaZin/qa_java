@@ -68,7 +68,7 @@ class FelineTest {
   @ParameterizedTest(name = "getKittens({0}) должен вернуть {0}")
   @ValueSource(ints = {Integer.MIN_VALUE, -1, 0, 1, Integer.MAX_VALUE})
   @DisplayName("getKittens с параметром должен возвращать переданное значение")
-  void GetKittensCustomTest(int kittensCount) {
+  void getKittensCustomTest(int kittensCount) {
     assertEquals(kittensCount, feline.getKittens(kittensCount));
   }
 }
